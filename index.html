@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accessibility</title>
+  </head>
+  <body>
+    <header class="header-container" role="banner">
+      <nav class="navigation" aria-label="Main navigation">
+        <div class="logo">
+          <a href="#" aria-label="Go to homepage"
+            ><img src="img/logo.png" alt="Company logo"
+          /></a>
+        </div>
+        <ul class="navigation-links">
+          <li><a href="#" aria-label="About us page">About Us</a></li>
+          <li><a href="#" aria-label="Contact us page">Contact Us</a></li>
+          <li><a href="#" aria-label="Read our blog">Blog</a></li>
+          <li><a href="#" aria-label="View site map">Site Map</a></li>
+          <li><a href="#" aria-label="Switch language to English">Eng</a></li>
+        </ul>
+      </nav>
+      <div class="search" role="search">
+        <form class="search-form" aria-label="Site search">
+          <input
+            class="search-input"
+            type="search"
+            name="search"
+            id="site-search"
+            aria-label="Search this site"
+            placeholder="Search the site"
+          />
+          <button
+            class="search-button"
+            type="submit"
+            aria-label="Submit search"
+          >
+            <img src="img/search-icon.png" alt="Search" />
+          </button>
+        </form>
+      </div>
+    </header>
+    <main class="main-section" tabindex="-1">
+      <div class="main-section-text">
+        <h1 class="main-section--header-1">Lorem ipsum dolor sit amet</h1>
+        <h3 class="main-section--header-3">Lorem ipsum dolor sit amet</h3>
+        <p class="main-section--paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+          tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+          tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+          hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut
+          ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit
+          amet, consectetur adipiscing elit.
+        </p>
+        <button class="primary-btn" aria-label="Buy now button">Buy Now</button>
+      </div>
+      <div class="main-section-image">
+        <img src="img/palm.jpeg" alt="Palm leaves" />
+      </div>
+    </main>
+    <section class="about-us" aria-label="About Us Section">
+      <div class="about-us-card" role="article">
+        <div class="about-us-card--image">
+          <img
+            src="img/leaves.jpeg"
+            alt="Close-up image of green leaves"
+            aria-label="Green leaves"
+          />
+        </div>
+        <div class="about-us-card--text">
+          <h5 class="card-header">About Us</h5>
+          <p class="card-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+            hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis,
+            ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+            risus cursus.
+          </p>
+          <a href="#" class="learn-more-button" aria-label="Learn more about us"
+            >Learn more about </a
+          ><span class="button-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+      </div>
+      <div class="about-us-card" role="article">
+        <div class="about-us-card--image">
+          <img
+            src="img/leaves.jpeg"
+            alt="Close-up image of green leaves"
+            aria-label="Green leaves"
+          />
+        </div>
+        <div class="about-us-card--text">
+          <h5 class="card-header">About Us</h5>
+          <p class="card-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+            hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis,
+            ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor
+            sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu
+            risus cursus.
+          </p>
+          <a href="#" class="learn-more-button" aria-label="Learn more about us"
+            >Learn more about </a
+          ><span class="button-arrow" aria-hidden="true">&rarr;</span>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us" aria-label="Contact Us Section">
+      <div class="contact-us-container">
+        <div class="contact-us-info">
+          <h2 class="contact-us--header">Contact us</h2>
+          <p class="contact-us--paragraph">
+            Fill up the form and ur Team will get back to you within 24 hours.
+            Happy to see your message!
+          </p>
+          <ul class="contact-data-list">
+            <li class="contact-data-item">
+              <img src="img/fb-logo.png" alt="Facebook logo" /><span
+                class="contact-us--paragraph"
+                >+380 93 15 32 456</span
+              >
+            </li>
+            <li class="contact-data-item">
+              <img src="img/fb-logo.png" alt="Facebook logo" /><span
+                class="contact-us--paragraph"
+                >example@gmail.com</span
+              >
+            </li>
+            <li class="contact-data-item">
+              <img src="img/fb-logo.png" alt="Facebook logo" /><span
+                class="contact-us--paragraph"
+                >Pidmurma 5a, Lviv</span
+              >
+            </li>
+          </ul>
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a href="#">
+                <img src="img/fb-logo.png" alt="Facebook logo" />
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#">
+                <img src="img/fb-logo.png" alt="Facebook logo" />
+              </a>
+            </li>
+            <li class="social-media-item">
+              <a href="#">
+                <img src="img/fb-logo.png" alt="Facebook logo" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-us-form">
+          <form>
+            <div class="personal-data">
+              <div class="personal-data-field">
+                <label class="contact-us--paragraph" for="first-name"
+                  >First Name
+                  <span class="contact-us--paragraph required-field"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First Name"
+                  required
+                  aria-label="First Name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="personal-data-field">
+                <label class="contact-us--paragraph" for="last-name"
+                  >Last Name
+                  <span class="contact-us--paragraph required-field"
+                    >*</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last Name"
+                  required
+                  aria-label="Last Name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="personal-data-field">
+                <label class="contact-us--paragraph" for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@gmail.com"
+                  aria-label="Email"
+                />
+              </div>
+              <div class="personal-data-field">
+                <label class="contact-us--paragraph" for="phone"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+380 00 000 00 00"
+                  aria-label="Phone Number"
+                />
+              </div>
+            </div>
+            <div class="radio-groups">
+              <div class="radio-group">
+                <input type="radio" name="role" value="ui-developer" checked />
+                <label for="ui-developer"> UI Developer</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="role" value="ui-ux-designer" />
+                <label for="ui-ux-designer"> UI/UX Designer</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="role" value="accessibility-expert" />
+                <label for="accessibility-expert"> Accessibility Expert</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="role" value="qa-engineer" />
+                <label for="qa-engineer">QA Engineer</label>
+              </div>
+              <div class="radio-group">
+                <input type="radio" name="role" value="other" />
+                <label for="other"> Other</label>
+              </div>
+            </div>
+            <div class="message-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Text here..."
+                aria-label="Message"
+              ></textarea>
+            </div>
+            <div class="checkbox-groups">
+              <div class="checkbox-group">
+                <input type="checkbox" name="terms1" />
+                <label for="terms1"> Accept the Terms</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" name="terms2" checked />
+                <label for="terms2"> Accept the Terms 2</label>
+              </div>
+            </div>
+            <button class="primary-btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <div class="subscription">
+          <h2 class="subscription--header">PlantMe</h2>
+          <p class="subscription--paragraph">
+            Subscribe and be the first to know about our news and promotions.
+          </p>
+          <form class="subscribe-form" aria-label="Subscribe to newsletter">
+            <input
+              type="email"
+              id="footer-email"
+              name="email"
+              placeholder="example@gmail.com"
+              aria-label="Enter your email to subscribe"
+            />
+            <button class="primary-btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+        <nav class="navigation-and-contact" aria-label="Footer navigation and contact information">
+          <ul class="navigation-footer" aria-label="Quick links">
+            <li><a href="#" class="subscription--paragraph">About Us</a></li>
+        <li><a href="#" class="subscription--paragraph">Contact Us</a></li>
+        <li><a href="#" class="subscription--paragraph">Blog</a></li>
+        <li><a href="#" class="subscription--paragraph">Site Map</a></li>
+          </ul>
+          <div class="contact-info">
+            <p class="subscription--paragraph">Contacts</p>
+            <p class="subscription--paragraph contact-data">+38 063 072 0121</p>
+            <p class="subscription--paragraph contact-data">
+              <a href="mailto:plantme.store@gmail.com"
+                >plantme.store@gmail.com</a
+              >
+            </p>
+            <div class="payment" aria-label="Accepted payment methods">
+              <img class="payment-img" src="img/visa.png" alt="Visa card accepted" />
+              <img class="payment-img" src="img/master.png" alt="Master card accepted" />
+            </div>
+          </div>
+        </nav>
+      </div>
+      <hr />
+      <div class="reserved-rights">
+        <p class="reserved-rights--paragraph center-position">
+          &copy; 2022 PlantMe. All Rights Reserved
+        </p>
+        <ul class="site-info" aria-label="Additional information">
+          <li>
+            <a class="reserved-rights--paragraph" href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="reserved-rights--paragraph" href="#">Terms of service</a>
+          </li>
+          <li><a class="reserved-rights--paragraph" href="#">Language</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
